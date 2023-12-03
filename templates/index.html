@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Prediction</title>
+</head>
+<body>
+    <form action="/predict" method="post">
+        <label>Applicant Income :</label>
+        <input type="number" name="applicant_income"><br><br>
+
+        <label>Coapplicant Income :</label>
+        <input type="number" name="coapplicant_income"><br><br>
+
+        <label>Loan Amount in thousands :</label>
+        <input type="number" name="loan_amount"><br><br>
+
+        <label>Loan Term in months :</label>
+        <input type="number" name="loan_term"><br><br>
+
+        <label>Gender :</label>
+        <select name="gender">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select><br><br>
+
+        <label>Married :</label>
+        <select name="married">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label>Number of Dependents :</label>
+        <select name="dependents">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3+</option>
+        </select><br><br>
+
+        <label>Applicant Education :</label>
+        <select name="education">
+            <option value="0">Graduate</option>
+            <option value="1">Not Graduate</option>
+        </select><br><br>
+
+        <label>Self-employed :</label>
+        <select name="self_employed">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label>Credit History meets guidelines :</label>
+        <select name="credit_history">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label>Property Area :</label>
+        <select name="property_area">
+            <option value="0">Rural</option>
+            <option value="1">Semiurban</option>
+            <option value="2">Urban</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <h1>Predicted Loan Status : </h1>
+    <h2>{{prediction}}</h2>
+</body>
+</html>
