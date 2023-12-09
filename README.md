@@ -57,4 +57,4 @@ Visit `http://localhost:5000` in your web browser to interact with the loan elig
 ## Contribution
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
-Alternatively, you can access the web application online at http://sairaju.pythonanywhere.com/.
+Alternatively, you can access the web application online at [click here to open project](http://sairaju.pythonanywhere.com/).
